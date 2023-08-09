@@ -10,7 +10,25 @@
   </head>
 
   <body>
-
+    <div class="container" id="container">
+      <div class="canvas" id="canvas"></div>
+      <div class="panel" id="panel">
+        <div class="field size-field">
+          <label for="size">16x16</label>
+          <input type="range" name="size" id="size" min="16" max="64" value="16">
+        </div>
+        <div class="field">
+          <label for="mode"></label>
+          <select name="mode" id="mode">
+            <option value="bw">B&W</option>
+            <option value="accent">Accent</option>
+            <option value="random">Random</option>
+            <option value="gradient">Gradient</option>
+          </select>
+        </div>
+        <button id="clear">Clear Canvas</button>
+      </div>
+    </div>
   </body>
 
 </html>

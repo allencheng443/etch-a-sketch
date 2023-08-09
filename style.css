@@ -1,0 +1,74 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-accent: #e25931;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 62.5%;
+  accent-color: var(--color-accent);
+}
+
+body {
+  font-size: calc(10px + 0.390625vw);
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+}
+
+.container {
+  height: 100vh;
+  border: 3px solid red;
+}
+
+.canvas {
+  width: clamp(300px, 90vmin, 600px);
+  height: clamp(300px, 90vmin, 600px);
+  border: 3px solid blue;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: repeat(var(--grid), 1fr);
+  grid-template-rows: repeat(var(--grid), 1fr);
+}
+
+.grid {
+  border: 1px solid lightcoral;
+}
+
+.panel {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.field {
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.size-field {
+  flex-direction: row-reverse;
+}
+
+#clear {
+  padding: 0.5rem 1rem;
+}
